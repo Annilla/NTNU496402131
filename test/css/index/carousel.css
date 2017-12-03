@@ -1,0 +1,176 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+-------------------------------------
+channel 頻道區塊
+-------------------------------------
+*/
+.slider2_container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 920px;
+	height: 238px;
+	overflow: hidden;
+}
+.slider2_container .loading {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.slider2_container .loading .filter {
+	filter: alpha(opacity=10);
+	opacity:0.1;
+	position: absolute;
+	display: block;
+    background-color: #000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+}
+.slider2_container .loading .bg {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../../img/loading.svg);
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.slider2_container .slides {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 920px;
+	height: 238px;
+	overflow: hidden;
+}
+/* jssor slider arrow navigator skin 03 css */
+/*
+.jssora03l                  (normal)
+.jssora03r                  (normal)
+.jssora03l:hover            (normal mouseover)
+.jssora03r:hover            (normal mouseover)
+.jssora03l.jssora03ldn      (mousedown)
+.jssora03r.jssora03rdn      (mousedown)
+*/
+.slider2_container .jssora03l, .slider2_container .jssora03r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 55px;
+	height: 238px;
+	cursor: pointer;
+	overflow: hidden;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 20% auto;
+}
+.slider2_container .jssora03l {
+	top: 0;
+	left: 0;
+	background-image: url(../../img/index/banner_btn_l.png);
+}
+.slider2_container .jssora03r {
+	top: 0;
+	right: 0;
+	background-image: url(../../img/index/banner_btn_r.png);
+}
+.slider2_container .jssora03l:hover, .slider2_container .jssora03r:hover {
+	background-color: rgba(255,255,255,0.50);
+}
+.slider2_container .jssora03l.jssora03ldn, .slider2_container .jssora03r.jssora03rdn {
+	background-color: rgba(255,255,255,0.50);
+}
+/*
+-------------------------------------
+blog區塊
+-------------------------------------
+*/
+.slider5_container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1050px;
+	height: 399px;
+	overflow: hidden;
+}
+.slider5_container .loading {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.slider5_container .loading .filter {
+	filter: alpha(opacity=10);
+	opacity:0.1;
+	position: absolute;
+	display: block;
+    background-color: #000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+}
+.slider5_container .loading .bg {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../../img/loading.svg);
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.slider5_container .slides {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1050px;
+	height: 399px;
+	overflow: hidden;
+}
+/* jssor slider arrow navigator skin 03 css */
+/*
+.jssora03l                  (normal)
+.jssora03r                  (normal)
+.jssora03l:hover            (normal mouseover)
+.jssora03r:hover            (normal mouseover)
+.jssora03l.jssora03ldn      (mousedown)
+.jssora03r.jssora03rdn      (mousedown)
+*/
+.slider5_container .jssora03l, .slider5_container .jssora03r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 55px;
+	height: 399px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	background-color: rgba(72,72,72,0.3);
+	background-position: center center;
+	background-size: 50% auto;
+}
+.slider5_container .jssora03l {
+	top: 0;
+	left: 0;
+	background-image: url(../../img/index/banner_btn_l.png);
+}
+.slider5_container .jssora03r {
+	top: 0;
+	right: 0;
+	background-image: url(../../img/index/banner_btn_r.png);
+}
+.slider5_container .jssora03l:hover, .slider5_container .jssora03r:hover {
+	background-color: rgba(255,255,255,0.50);
+}
+.slider5_container .jssora03l.jssora03ldn, .slider5_container .jssora03r.jssora03rdn {
+	background-color: rgba(255,255,255,0.50);
+}

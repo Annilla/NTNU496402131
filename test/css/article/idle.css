@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+-------------------------------------
+main
+-------------------------------------
+*/
+#idle {
+	width: 1048px;
+	background-color: rgba(255,255,255,0.7);
+	padding: 20px;
+	border-bottom: 20px solid #01E6A8;
+}
+#idle .head {
+	font-size: 18px;
+	line-height: 1.5em;
+	overflow: auto;
+	margin-bottom: 12px;
+}
+#idle .fb {
+	margin-bottom: 20px;
+}
+#idle .main {
+	overflow: auto;
+}
+#idle .main .mainL {
+	width: 728px;
+	float: left;
+}
+#idle .main .mainR {
+	width: 300px;
+	float: right;
+}
+/*
+-------------------------------------
+banner 輪播
+-------------------------------------
+*/
+#idle .main .mainL .banner {
+	width: 728px;
+	height: 224px;
+	overflow: hidden;
+}
+#idle .banner a {
+	display: block;
+	float: left;
+	width: 364px;
+	height: 214px;
+	position: relative;
+	overflow: hidden;
+}
+#idle .banner a img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#idle .banner a:hover img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+#idle .banner a .title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.7);
+	padding: 10px 20px;
+	width: 324px;
+}
+#idle .banner a:hover .title {
+	background-color: rgba(10,88,166,0.7);
+}
+#idle .banner a .title span {
+	display: block;
+	color: #FFFFFF;
+	font-size: 14px;
+	line-height: 1.5em;
+	height: 3em;
+	overflow: hidden;
+}
+/*
+-------------------------------------
+banner 輪播 slides
+-------------------------------------
+*/
+.slider6_container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 728px;
+	height: 224px;
+	overflow: hidden;
+}
+.slider6_container .loading {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.slider6_container .loading .back {
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+	position: absolute;
+	display: block;
+	background-color: #000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.slider6_container .loading .img {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../../img/loading.svg);
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.slider6_container .slides {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 728px;
+	height: 224px;
+	overflow: hidden;
+}
+/* jssor slider bullet navigator skin 03 css */
+/*
+.jssorb03 div           (normal)
+.jssorb03 div:hover     (normal mouseover)
+.jssorb03 .av           (active)
+.jssorb03 .av:hover     (active mouseover)
+.jssorb03 .dn           (mousedown)
+*/
+.slider6_container .jssorb03 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.slider6_container .jssorb03 div, .slider6_container .jssorb03 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 182px;
+	height: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	background-color: #FFFFFF;
+}
+.slider6_container .jssorb03 div {}
+.slider6_container .jssorb03 div:hover, .slider6_container .jssorb03 .av:hover {
+	background-color: #01E6A8;	
+}
+.slider6_container .jssorb03 .av {
+	background-color: #01E6A8;	
+}
+.slider6_container .jssorb03 .dn, .slider6_container .jssorb03 .dn:hover {}
+
+/*
+-------------------------------------
+favorite 網友們最愛
+-------------------------------------
+*/
+ul#favorite_idle {
+	width: 728px;
+	overflow: auto;
+	padding: 10px 0;
+}
+ul#favorite_idle li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin: 8px 27px 8px 0px;
+}
+ul#favorite_idle li a {
+	width: 336px;
+	height: 1em;
+	line-height: 1em;
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	overflow: hidden;
+	color: black;
+}
+ul#favorite_idle li a:before {
+	content: "．";
+	display: inline-block;
+}
+ul#favorite_idle li a:hover {
+	color: #0A58A6;
+}
+
+
+/*
+-------------------------------------
+dfp
+-------------------------------------
+*/
+#dfp_728_90_idle {
+	width: 728px;
+	margin: 10px 0;
+}
+#dfp_300_250_idle_top {
+	width: 300px;
+	margin-bottom: 10px;
+}
+#dfp_300_250_idle_bottom {
+	width: 300px;
+}

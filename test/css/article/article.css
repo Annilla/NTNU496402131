@@ -1,0 +1,648 @@
+@charset "UTF-8";
+/* CSS Document */
+/*1024x768 size*/
+
+/*
+-------------------------------------
+path
+-------------------------------------
+*/
+#date {
+	float: right;
+}
+
+/*
+-------------------------------------
+article
+-------------------------------------
+*/
+article {
+	width: 730px;
+}
+#articleHead {
+	padding: 20px 0;
+	position: relative;
+}
+/*主要文章標題*/
+#articleHead h1 {
+	width: 730px;
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: normal;
+	color: #0A58A6;
+}
+#articleHead .source {
+	font-size: 16px;
+	line-height: 20px;
+	display: inline-block;
+	margin-top: 10px;
+}
+#articleHead .source a {
+	color: #0A58A6;
+}
+#articleHead #fbLike {
+	display: inline-block;
+	margin: 10px 0 0 10px;
+}
+/*主要文章內容*/
+#articleMain {
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 2em;
+	margin-bottom: 20px;
+	padding: 0 65px;
+}
+#articleMain img {
+	width: 100%;
+	height: auto;
+}
+#source {
+	font-size: 16px;
+	line-height: 2em;
+	margin-bottom: 20px;
+	padding: 0 65px;
+}
+#source a {
+	color: #0A58A6;
+}
+article h2 {
+	font-weight: normal;
+	padding: 10px 0;
+}
+article h2 a {
+	color: #0A58A6;
+}
+article h2 a:hover {
+	text-decoration: underline;
+}
+article .picSource {
+	font-weight: normal;
+	padding: 10px 0;
+}
+article .picSource a {
+	color: #0A58A6;
+}
+article .picSource a:hover {
+	text-decoration: underline;
+}
+#articlepage {
+	text-align: center;
+	color: #0A58A6;
+	margin-top: 20px;
+}
+#articlepage a {
+	margin: 0 10px;
+}
+#articlepage a:hover {
+	text-decoration: underline;
+}
+#articlepage a.selected {
+	text-decoration: underline;
+}
+article .socialBox {
+	overflow: auto;
+	margin-top: 20px;
+}
+article .socialBox ul.socialPlug {
+	height: 20px;
+	overflow: hidden;
+	float: left;
+}
+article .socialBox ul.socialPlug li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+article .socialBox .source2 {
+	color: #0A58A6;
+	float: right;
+}
+
+/*
+-------------------------------------
+articleRecommend 延伸閱讀
+-------------------------------------
+*/
+ul#articleRecommend {
+	width: 603px;
+	overflow: hidden;
+	margin: 20px auto;
+	position: relative;
+	background-color: #01E6A8;
+}
+ul#articleRecommend .head {
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	line-height: 40px;
+	font-size: 20px;
+	letter-spacing: 3px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../../img/article/article_recommend.png);
+	background-repeat: repeat-x;
+	background-size: auto 60px;
+}
+ul#articleRecommend li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin-right: 3px;
+}
+ul#articleRecommend li.last {
+	margin-right: 0;
+}
+ul#articleRecommend li a {
+	position: relative;
+}
+ul#articleRecommend li .pic {
+	width: 300px;
+	height: 300px;
+	overflow: hidden;
+}
+ul#articleRecommend li .pic img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#articleRecommend li:hover .pic img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+ul#articleRecommend li .main {
+	width: 240px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 10px 30px;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.8);
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#articleRecommend li:hover .main {
+	background-color: rgba(10,88,166,0.8);
+}
+ul#articleRecommend li .main .title {
+	display: block;
+	font-size: 14px;
+	line-height: 1.5em;
+	height: 3em;
+	overflow: hidden;
+}
+
+/*
+-------------------------------------
+fbShare 分享給朋友
+-------------------------------------
+*/
+a#fbShare {
+	width: 686px;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+	font-size: 18px;
+	height: 50px;
+	line-height: 50px;
+	color: #FFFFFF;
+	overflow: hidden;
+	padding: 0 20px;
+	background-image: url(../../img/article/fb_share_bg.png);
+	background-repeat: repeat-x;
+	border-radius: 5px;
+	border: 2px ridge #0A58A6;
+	-webkit-box-shadow: inset 0px 0px 2px 1px rgba(255,255,255,0.5);
+	-moz-box-shadow: inset 0px 0px 2px 1px rgba(255,255,255,0.5);
+	box-shadow: inset 0px 0px 2px 1px rgba(255,255,255,0.5);
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+a#fbShare:hover {
+	background-image: url(../../img/article/fb_share_bg_hover.png);
+	background-repeat: repeat-x;
+	-webkit-box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.5);
+}
+a#fbShare span {
+	display: block;
+	float: left;
+	margin-top: 10px;
+}
+
+/*
+-------------------------------------
+picNotice 文章警示語
+-------------------------------------
+*/
+.picNotice {
+	width: 690px;
+	padding: 20px;
+	background-color: #f2f2f2;
+	overflow: hidden;
+	font-size: 16px;
+}
+.picNotice a {
+	float: right;
+	color: #0A58A6;
+}
+.picNotice a:hover {
+	opacity: 0.5;
+}
+
+/*
+-------------------------------------
+dfp
+-------------------------------------
+*/
+#dfp_336_280_article_bottom_L {
+	width: 336px;
+	float: left;
+	margin-right: 58px;
+}
+#dfp_336_280_article_bottom_R {
+	width: 336px;
+	float: left;
+}
+#dfp_728_90_article_middle {
+	width: 728px;
+}
+#dfp_728_90_article_top {
+	width: 728px;
+	margin-bottom: 20px;
+}
+
+/*
+-------------------------------------
+favorite 網友們最愛
+-------------------------------------
+*/
+ul#favorite {
+	width: 730px;
+	overflow: auto;
+	padding: 10px 0;
+	border-bottom: 1px solid #C0C0C0;
+}
+ul#favorite li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin: 8px 14px 8px 15px;
+}
+ul#favorite li a {
+	width: 336px;
+	height: 1em;
+	line-height: 1em;
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	overflow: hidden;
+}
+ul#favorite li a:hover {
+	color: #0A58A6;
+}
+
+/*
+-------------------------------------
+回至文章結尾處
+-------------------------------------
+*/
+.articleBack {
+	background-color: #0A58A6;
+	cursor: pointer;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.articleBack:hover {
+	background-color: #01E6A8;
+}
+
+/*
+-------------------------------------
+socialBox 浮動分享
+-------------------------------------
+*/
+#socialBox {
+	position: fixed;
+	top: 30%;/*用js抓視窗垂直置中*/
+	left: 0;
+	width: 80px;
+	height: 320px;
+	overflow: hidden;
+	display: none;
+}
+#socialBox ul.plugin {}
+#socialBox ul.plugin li {
+	list-style: none;
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-color: #F2F2F2;
+	overflow: hidden;
+}
+#socialBox ul.plugin li >div {
+	float: left;
+}
+#socialBox ul.plugin li.fbLike >div {
+	margin: 9px 0 0 13px;
+	width: 55px;
+	height: 61px;
+	overflow: hidden;
+}
+#socialBox ul.plugin li.fbShare >div {
+	margin: 9px 0 0 15px;
+}
+#socialBox ul.plugin li.twitter >div {
+	margin: 9px 0 0 11px;
+}
+#socialBox ul.plugin li.google >div {
+	margin: 10px 0 0 13px;
+}
+#socialBox ul.cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#socialBox ul.cover li {
+	list-style: none;
+	display: block;
+	width: 80px;
+	height: 79px;
+	background-color: #0A58A6;
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	border-bottom: 1px solid #FFFFFF;
+}
+#socialBox ul.cover li.fbLike {
+	background-image: url(../../img/article/social_box_cover_fb.png);
+	background-size: auto 30px;
+	top: 0;
+}
+#socialBox ul.cover li.fbShare {
+	background-image: url(../../img/article/social_box_cover_fb2.png);
+	background-size: auto 30px;
+	top: 80px;
+}
+#socialBox ul.cover li.twitter {
+	background-image: url(../../img/article/social_box_cover_twitter.png);
+	background-size: auto 25px;
+	top: 160px;
+}
+#socialBox ul.cover li.google {
+	background-image: url(../../img/article/social_box_cover_google.png);
+	background-size: auto 25px;
+	top: 240px;
+}
+
+/*
+-------------------------------------
+articlePrev Next 浮動上一篇下一篇
+-------------------------------------
+*/
+/*上一篇*/
+#articlePrevBtn {
+	width: 50px;
+	height: 131px;
+	background-image: url(../../img/article/article_prev.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px auto;
+	cursor: pointer;
+	position: fixed;/*js調整*/
+	z-index: 2;
+}
+#articlePrev {
+	width: 450px;
+	height: 141px;
+	overflow: hidden;
+	position: fixed;/*js調整*/
+	z-index: 2;
+	display: none;
+	cursor: pointer;
+}
+#articlePrev a {
+	display: block;
+	width: 450px;
+	height: 131px;
+	color: #484848;
+	overflow: hidden;
+	background-image: url(../../img/article/article_prev_hover.png);
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	background-size: 30px auto;
+	border-bottom: 10px solid #0A58A6;
+	background-color: #01E6A8;
+	margin-left: -450px;
+	opacity: 0;
+}
+#articlePrev:hover a {
+	margin-left: 0px;
+	opacity: 1;
+}
+#articlePrev a span {
+	display: block;
+	font-size: 16px;
+	width: 200px;
+	height: 4.5em;
+	line-height: 1.5em;
+	overflow: hidden;
+	float: left;
+	margin: 30px 0 0 80px;
+}
+#articlePrev a img {
+	width: 131px;
+	height: 131px;
+	float: right;
+}
+/*下一篇*/
+#articleNextBtn {
+	width: 50px;
+	height: 131px;
+	background-image: url(../../img/article/article_next.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px auto;
+	cursor: pointer;
+	position: fixed;/*js調整*/
+	z-index: 2;
+}
+#articleNext {
+	width: 450px;
+	height: 141px;
+	overflow: hidden;
+	position: fixed;/*js調整*/
+	z-index: 2;
+	display: none;
+	cursor: pointer;
+}
+#articleNext a {
+	width: 450px;
+	height: 131px;
+	display: block;
+	color: #484848;
+	overflow: hidden;
+	background-color: #01E6A8;
+	background-image: url(../../img/article/article_next_hover.png);
+	background-repeat: no-repeat;
+	background-position: 407px center;
+	background-size: 30px auto;
+	border-bottom: 10px solid #0A58A6;
+	margin-left: 450px;
+	opacity: 0;
+}
+#articleNext:hover a {
+	margin-left: 0px;
+	opacity: 1;
+}
+#articleNext a span {
+	display: block;
+	font-size: 16px;
+	width: 200px;
+	height: 4.5em;
+	line-height: 1.5em;
+	overflow: hidden;
+	float: left;
+	margin: 30px 0 0 30px;
+}
+#articleNext a img {
+	width: 131px;
+	height: 131px;
+	float: left;
+}
+
+/*
+-------------------------------------
+fbPageLike 喜歡這篇文章嗎？按讚接收更多JUKSY的精選文章！
+-------------------------------------
+*/
+#fbPageLike {
+	width: 400px;
+	height: 150px;
+	padding: 40px 40px;
+	font-size: 20px;
+	line-height: 1.5em;
+	border-bottom: 20px solid #01E6A8;
+	background-color: rgba(255,255,255,0.7);
+	background-image: url(../../img/article/fb_like_window_bg.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+/*
+-------------------------------------
+content18 本區域依『電腦網際網路分級辦法』歸類為限制級
+-------------------------------------
+*/
+#content18 {
+	width: 480px;
+	height: 235px;
+	background-color: rgba(255,255,255,0.8);
+	background-image: url(../../img/article/r18.png);
+	background-size: 26px 34px;
+	background-repeat: no-repeat;
+	background-position: center 17px;
+	border-bottom: 15px solid #0A58A6;
+}
+#content18 .title {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	color: #484848;
+	letter-spacing: 3px;
+	padding-top: 76px;
+	padding-bottom: 24px;
+}
+#content18 .title .row2 {
+	font-size: 16px;
+	display: block;
+	margin-top: 5px;
+	font-weight: normal;
+}
+#content18 ul.btn {
+	overflow: auto;
+	padding: 0 74px;
+}
+#content18 ul.btn li {
+	list-style: none;
+	display: block;
+	float: left;
+	background-color: #1fb8de;
+	border: 1px solid #1fb8de;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	line-height: 1.5em;
+	cursor: pointer;
+	padding: 10px 34px;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#content18 ul.btn li:last-child {
+	float: right;
+	background-color: transparent;
+	border: 1px solid #666666;
+	color: #484848;
+}
+
+/*
+-------------------------------------
+footerAd 頁尾廣告
+-------------------------------------
+*/
+.footerAd {
+	width: 100%;
+	background-color: #134175;
+	color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+.footerAd .close {
+	height: 38px;
+	background-color: rgba(0,0,0,0.3);
+	background-image: url(../../img/article/footad_close.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.footerAd .close:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+.footerAd .footerAdWrap {
+	width: 970px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+/*
+-------------------------------------
+如果使用者之視窗寬度 >= 1050px，載入這裡的 CSS。
+-------------------------------------
+*/
+@media screen and (min-width: 1050px) {
+#socialBox {
+	display: block;
+}
+}

@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+-------------------------------------
+影音館分類頁 dfp
+-------------------------------------
+*/
+#dfp_video_channel_300_250_aside_top, #dfp_video_channel_300_250_aside_bottom {
+	width: 300px;
+}
+/*
+-------------------------------------
+熱門影音 video_channel
+-------------------------------------
+*/
+ul#newsCon.videoNewsCon li a .newsImg {
+	width: 300px;
+	height: 168px;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#newsCon.videoNewsCon li a .newsImg img {
+	width: 300px;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: -28.5px;
+}
+
+/*
+-------------------------------------
+影音館分類頁
+-------------------------------------
+*/
+ul.videoChannel {
+	overflow: hidden;
+	height: 1156px;
+}
+ul.videoChannel li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin: 0 10px 20px 0;
+}
+ul.videoChannel li a {
+	display: block;
+	width: 360px;
+	height: 274px;
+	overflow: hidden;
+	position: relative;
+}
+ul.videoChannel li a img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -34px;
+	height: auto;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul.videoChannel li a:hover img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+ul.videoChannel li a .cover {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+ul.videoChannel li a:hover .cover {
+	background-color: rgba(255,255,255,0.5);
+}
+ul.videoChannel li a .title {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 202px;
+	background-color: #808080;
+	color: #FFFFFF;
+	padding: 15px 30px;
+	width: 300px;
+}
+ul.videoChannel li a .title span {
+	display: block;
+	height: 3em;
+	line-height: 1.5em;
+	overflow: hidden;
+}

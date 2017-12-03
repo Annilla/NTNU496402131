@@ -1,0 +1,128 @@
+@charset "UTF-8";
+/* CSS Document */
+/*1024x768 size*/
+
+#slider1_container {
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.slider1_container {
+	position: relative;
+	width: 1050px;
+    height: 510px;
+	overflow: hidden;
+}
+.slider1_container .loading {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.slider1_container .loading .filter {
+	filter: alpha(opacity=10);
+	opacity:0.1;
+	position: absolute;
+	display: block;
+    background-color: #000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+}
+.slider1_container .loading .bg {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../../img/loading.svg);
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.slider1_container .slides {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1050px;
+	height: 480px;
+	overflow: hidden;
+}
+/* jssor slider arrow navigator skin 13 css */
+/*
+.jssora13l                  (normal)
+.jssora13r                  (normal)
+.jssora13l:hover            (normal mouseover)
+.jssora13r:hover            (normal mouseover)
+.jssora13l.jssora13ldn      (mousedown)
+.jssora13r.jssora13rdn      (mousedown)
+*/
+.jssora13l, .jssora13r {
+	display: none;
+	position: absolute;
+	/* size of arrow element */
+	width: 82px;
+	height: 145px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: 50px auto;
+	overflow: hidden;
+	top: 150px;
+	opacity: 1;
+}
+.jssora13l {
+	background-image: url(../../img/index/bigbanner_btn_l.png);
+	left: 0;/*js*/
+}
+.jssora13r {
+	background-image: url(../../img/index/bigbanner_btn_r.png);
+	right: 0;/*js*/
+	background-position: right top;
+}
+.jssora13l:hover {opacity: 1;}
+.jssora13r:hover {opacity: 1;}
+.jssora13l.jssora13ldn {}
+.jssora13r.jssora13rdn {}
+/* jssor slider bullet navigator skin 05 css */
+/*
+.jssorb05 div           (normal)
+.jssorb05 div:hover     (normal mouseover)
+.jssorb05 .av           (active)
+.jssorb05 .av:hover     (active mouseover)
+.jssorb05 .dn           (mousedown)
+*/
+.jssorb05 {
+	position: absolute;
+	bottom: 0;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 10px;
+	height: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: rgba(128,128,128,0.3);
+}
+.jssorb05 div {}
+.jssorb05 div:hover, .jssorb05 .av:hover {background-color: rgba(10,88,166,0.5);}
+.jssorb05 .av {background-color: rgba(10,88,166,1);}
+.jssorb05 .dn, .jssorb05 .dn:hover {}
+
+/*
+-------------------------------------
+如果使用者之視窗寬度 >= 1050px，載入這裡的 CSS。
+-------------------------------------
+*/
+@media screen and (min-width: 1230px) {
+.slider1_container {
+	width: 1230px;
+}
+.slider1_container .slides {
+	left: 90px;
+}
+.jssora13l, .jssora13r {
+	display: block;
+}
+}

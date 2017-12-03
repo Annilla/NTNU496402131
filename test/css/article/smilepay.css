@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* CSS Document */
+/*smilepay btn 了解更多 立即購買*/
+a.moreBtn {
+	width: 141px;
+	height: 40px;
+	display: inline-block;
+	background-image: url(../../img/article/smilepay_yellow_btn.png);
+	background-repeat: repeat-x;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+	text-align: center;
+	-webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+	border-radius: 10px;
+}
+a.moreBtn:hover {
+	color: #C1272D;
+	background-image: url(../../img/article/smilepay_yellow_btn_hover.png);
+	-webkit-box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.75);
+}
+form.smilepay {
+	display: inline-block;
+	font-weight: bold;
+}
+form.smilepay .submitRec {
+	width: 150px;
+	border-radius: 15px;
+	background-color: #333333;
+	color: #CCCCCC;
+	text-align: center;
+	font-size: 14px;
+	padding: 10px;
+	line-height: 1em;
+}
+form.smilepay .submitRec input {
+	display: block;
+	width: 140px;
+	height: 40px;
+	line-height: 0.7em;
+	margin: 0 auto 10px auto;
+	background-image: url(../../img/article/smilepay_red_btn.png);
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+	box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.5);
+	border-radius: 10px;
+	border: 0;
+	color: #FFFFFF;
+	font-size: 20px;
+	text-indent: 30px;
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
+}
+form.smilepay .submitRec input:hover {
+	background-image: url(../../img/article/smilepay_red_btn_hover.png);
+}
+

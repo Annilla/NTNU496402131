@@ -1,0 +1,324 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+-------------------------------------
+影音館內頁 dfp
+-------------------------------------
+*/
+#dfp_video_detail_300_250_aside {
+	width: 300px;
+}
+#dfp_728_90_video_detail_top, #dfp_728_90_video_detail_middle {
+	width: 728px;
+}
+
+/*
+-------------------------------------
+影片播放 videoPlayer
+-------------------------------------
+*/
+.videoPlayer {}
+
+.videoPlayer .youtube-container {
+	display: block;
+	width: 730px;
+	height: 409px;
+	position: relative;
+}
+.videoPlayer .youtube-container h1 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 1.5em;
+	padding: 20px 50px;
+	background-color: rgba(0,0,0,0.5);
+	width: 630px;
+	opacity: 0;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.videoPlayer .youtube-container:hover h1 {
+	opacity: 1;
+}
+.videoPlayer .youtube-player {
+	width: 100%; /* assuming that the video has a 16:9 ratio */
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	cursor: pointer;
+	display: block;
+}
+.videoPlayer img.youtube-thumb {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -69px;
+	height: auto;
+}
+.videoPlayer .play-button {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url(../../img/video_play_btn.png);
+	background-position: center center;
+	background-size: 100px auto;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.videoPlayer .play-button:hover {
+	background-image: url(../../img/video_play_btn_hover.png);	
+}
+.videoPlayer #player {
+	width: 730px;
+	height: 409px;
+}
+
+/*
+-------------------------------------
+影片播放器 videoControl
+-------------------------------------
+*/
+.videoControl {
+	width: 730px;
+	height: 40px;
+	background-color: #808080;
+	overflow: hidden;
+}
+.videoControl .playBtn {
+	width: 60px;
+	height: 100%;
+	background-image: url(../../img/video/play_btn.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	border-right: 1px solid #484848;
+	cursor: pointer;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.videoControl .playBtn:hover {
+	background-image: url(../../img/video/play_btn_hover.png);
+}
+.videoControl .muteBtn {
+	width: 60px;
+	height: 100%;
+	background-image: url(../../img/video/mute_btn.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	cursor: pointer;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.videoControl .muteBtn:hover {
+	background-image: url(../../img/video/mute_btn_hover.png);
+}
+.videoControl .unMuteBtn {
+	width: 60px;
+	height: 100%;
+	background-image: url(../../img/video/unmute_btn.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	float: left;
+	cursor: pointer;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.videoControl .unMuteBtn:hover {
+	background-image: url(../../img/video/unmute_btn_hover.png);
+}
+/*音量滑桿*/
+.videoControl .volume {
+	width: 120px;
+	height: 6px;
+	float: left;
+	margin-top: 17px;
+	cursor: pointer;
+}
+.videoControl .volume:focus {
+	outline-width: 0;
+}
+.videoControl .volume.ui-widget-content {
+	border: 0;
+	background: #484848;
+}
+.videoControl .volume .ui-widget-header {
+	background: #00ffff;
+}
+.videoControl .volume .ui-slider-handle {
+	width: 15px;
+	height: 15px;
+	border-radius: 7.5px;
+	background: #00ffff;
+	border: 0;
+	cursor: pointer;
+}
+.videoControl .volume .ui-slider-handle:focus {
+	outline-width: 0;
+}
+/*音量滑桿結束*/
+
+.videoControl .progress {
+	width: 428px;
+	height: 100%;
+	float: left;
+	background-color: #484848;
+	position: relative;
+}
+
+/*進度滑桿*/
+.videoControl .progress .bar {
+	width: 428px;
+	height: 40px;
+	cursor: pointer;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.videoControl .progress .bar:focus {
+	outline-width: 0;
+}
+.videoControl .progress .bar .ui-corner-all {
+	border-radius: 0;
+}
+.videoControl .progress .bar.ui-widget-content {
+	border: 0;
+	background: #484848;
+}
+.videoControl .progress .bar .ui-widget-header {
+	background: #00ffff url("../../img/video/progressbar_bg.png") 50% 50% repeat-x;
+}
+.videoControl .progress .bar .ui-slider-handle {
+	width: 9px;
+	height: 40px;
+	border-radius: 0;
+	background: #00ffff;
+	border: 0;
+	cursor: pointer;
+	top: 0;
+}
+.videoControl .progress .bar .ui-slider-handle:focus {
+	outline-width: 0;
+}
+/*進度滑桿結束*/
+.videoControl .progress .time {
+	font-size: 16px;
+	line-height: 40px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	z-index: 2;
+}
+.videoControl .progress:hover .time {
+	display: none;
+}
+.videoControl .progress .time .current {}
+.videoControl .progress .time .entire {}
+
+/*
+-------------------------------------
+影片內頁
+-------------------------------------
+*/
+.videoSpace {
+	margin-top: 10px;
+}
+#novelVideoDetail {
+	margin-bottom: 0;
+}
+h1.video {
+	width: 730px;
+	font-size: 16px;
+	line-height: 2em;
+}
+
+
+/*
+-------------------------------------
+網友正在看
+-------------------------------------
+*/
+ul.videoLooking {
+	margin-top: 10px;
+}
+ul.videoLooking li {
+	list-style: none;
+	display: block;
+	margin-bottom: 10px;
+}
+ul.videoLooking li a {
+	display: block;
+	overflow: auto;
+}
+ul.videoLooking li a .img {
+	width: 150px;
+	height: 83px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+ul.videoLooking li a .img img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -15px;
+	height: auto;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul.videoLooking li a:hover .img img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+ul.videoLooking li a .img:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+ul.videoLooking li a:hover .img:after {
+	background-color: rgba(255,255,255,0.5);
+}
+ul.videoLooking li a span {
+	width: 140px;
+	height: 4.5em;
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-left: 10px;
+	line-height: 1.5em;
+}
+ul.videoLooking li a:hover span {
+	color: #0A58A6;
+}

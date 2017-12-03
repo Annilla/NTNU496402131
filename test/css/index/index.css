@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/* CSS Document */
+/*1024x768 size*/
+
+/*
+-------------------------------------
+movieMag 影片 雜誌櫃
+-------------------------------------
+*/
+#movieMag {
+	overflow: auto;
+	margin-bottom: 20px;
+}
+#movieMag .movie {
+	float: left;
+	margin-right: 20px;
+	position: relative;
+}
+#movieMag .movie .title {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #FFFFFF;
+	font-size: 16px;
+	line-height: 1.5em;
+	padding: 20px 50px;
+	background-color: rgba(0,0,0,0.5);
+	width: 620px;
+}
+
+#movieMag .movie .youtube-container {
+	display: block;
+	width: 720px;
+	height: 405px;
+}
+#movieMag .movie .youtube-player {
+	width: 100%; /* assuming that the video has a 16:9 ratio */
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	cursor: pointer;
+	display: block;
+}
+#movieMag .movie img.youtube-thumb {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -68px;
+	height: auto;
+}
+#movieMag .movie .play-button {
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-image: url(../../img/video_play_btn.png);
+	background-position: center center;
+	background-size: 100px auto;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#movieMag .movie .play-button:hover {
+	background-image: url(../../img/video_play_btn_hover.png);	
+}
+
+#movieMag .movie #player {
+	width:720px;
+	height:405px;
+}
+
+#movieMag .mag {
+	float: left;
+}
+
+/*
+-------------------------------------
+channel 頻道區塊
+-------------------------------------
+*/
+#channel {
+	width: 300px;
+}
+#channel .channelBar {
+	width: 1050px;
+	overflow: auto;
+	margin-bottom: 10px;
+}
+#channel .channelBar .channelCat {
+	width: 130px;
+	height: 158px;
+	padding-top: 80px;
+	background-color: #C0C0C0;
+	float: left;
+	font-size: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 3px;
+	line-height: 2em;
+}
+
+#channel a.channelBox {
+	display: block;
+}
+#channel a.channelBox .pic {
+	width: 300px;
+	height: 176px;
+	overflow: hidden;
+	position: relative;
+}
+#channel a.channelBox .pic img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#channel a.channelBox:hover .pic img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+#channel a.channelBox .pic .tag {
+	width: 80px;
+	height: 60px;
+	background-image: url(../../img/index/channel_tag.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #FFFFFF;
+	text-align: right;
+	padding: 10px 10px 0 0;
+}
+#channel a.channelBox .pic span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#channel a.channelBox:hover .pic span {
+	background-color: rgba(255,255,255,0.3);
+}
+#channel a.channelBox .title {
+	padding: 10px 30px;
+	background-color: #E6E6E6;
+}
+#channel a.channelBox .title p {
+	height: 3em;
+	line-height: 1.5em;
+	overflow: hidden;
+}
+#channel a.channelBox:hover .title p {
+	color: rgba(10,88,166,1.00);
+}
+
+/*
+-------------------------------------
+dfp 區塊
+-------------------------------------
+*/
+#dfp_1050_200_middle {
+	width: 1050px;
+	margin: 40px 0;
+}
+#dfp_1050_200_bottom {
+	width: 1050px;
+	margin: 40px 0;
+}
+
+
+/*
+-------------------------------------
+article 文章區塊
+-------------------------------------
+*/
+#article {
+	overflow: auto;
+	margin-bottom: 20px;/*add gap*/
+}
+#article .indexTitle {
+	background-color: #C0C0C0;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+#article .indexTitle .en {
+	font-size: 16px;
+}
+#article ul.recBox {
+	overflow: auto;
+	margin-bottom: 15px;
+}
+#article ul.recBox li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin-right: 15px;
+}
+#article ul.recBox li:last-child {
+	margin-right: 0;
+}
+#article ul.recBox li a {
+	display: block;
+	width: 340px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+#article ul.recBox li a .tag {
+	font-size: 18px;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	background-color: #0A58A6;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#article ul.recBox li a img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#article ul.recBox li a:hover img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+#article ul.recBox li a .cover {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#article ul.recBox li a:hover .cover {
+	background-color: rgba(255,255,255,0.3);
+}
+#article ul.recBox li a .title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 50px;
+	width: 240px;
+}
+#article ul.recBox li a .title span {
+	display: block;
+	color: #FFFFFF;
+	line-height: 1.5em;
+	height: 3em;
+	overflow: hidden;
+}
+
+#article ul.squareBox {
+	overflow: auto;
+}
+#article ul.squareBox li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin-right: 15px;
+}
+#article ul.squareBox li:last-child {
+	margin-right: 0;
+}
+#article ul.squareBox li a {
+	display: block;
+	width: 251.25px;
+	height: 251.25px;
+	overflow: hidden;
+	position: relative;
+}
+#article ul.squareBox li a .tag {
+	font-size: 18px;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	background-color: #0A58A6;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#article ul.squareBox li a img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#article ul.squareBox li a:hover img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+#article ul.squareBox li a .cover {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#article ul.squareBox li a:hover .cover {
+	background-color: rgba(255,255,255,0.3);
+}
+#article ul.squareBox li a .title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	padding: 10px 30px;
+	width: 191.25px;
+}
+#article ul.squareBox li a .title span {
+	display: block;
+	color: #FFFFFF;
+	line-height: 1.5em;
+	height: 3em;
+	overflow: hidden;
+}
+
+
+/*
+-------------------------------------
+blog blogger區塊
+-------------------------------------
+*/
+#blog {
+	margin: 40px 0;
+}
+#blog a.blogger {
+	display: block;
+	width: 210px;
+	height: 399px;
+	overflow: hidden;
+	position: relative;
+}
+#blog a.blogger img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+#blog a.blogger:hover img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 0%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 0%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 0%;
+	transform: scale(1.2);
+	transform-origin: 50% 0%;
+}
+#blog a.blogger span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#blog a.blogger:hover span {
+	background-color: rgba(255,255,255,0.3);	
+}
+#blog a.blogger .detail {
+	width: 190px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #FFFFFF;
+	padding: 0 10px;
+	background-image: -webkit-linear-gradient(270deg,rgba(72,72,72,0.00) 0%,rgba(72,72,72,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(72,72,72,0.00) 0%,rgba(72,72,72,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(72,72,72,0.00) 0%,rgba(72,72,72,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(72,72,72,0.00) 0%,rgba(72,72,72,1.00) 100%);
+}
+#blog a.blogger .detail .title {
+	padding: 20px 0 5px 0;
+}
+#blog a.blogger .detail .name {
+	font-size: 45px;
+	height: 1.5em;
+}
+
+/*
+-------------------------------------
+slogan
+-------------------------------------
+*/
+#movieSlogan, #blogSlogan {
+	color: #0A58A6;
+	font-style: italic;
+	font-size: 55px;
+	position: absolute;
+	margin-left: -20px;
+}

@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+-------------------------------------
+header logo
+-------------------------------------
+*/
+#juksyLogo a.video {
+	width: 286px;
+	height: 67px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 5px;
+}
+
+/*
+-------------------------------------
+影音館選單 nav
+-------------------------------------
+*/
+#mainMenu >ul.video {
+	float: none;
+	margin: 0 0 0 36px;/*因為clark的那檯電腦會掉下去，只設一邊margin*/
+}
+nav.fixed #mainMenu >ul.video {
+	margin: 0;
+}
+
+/*
+-------------------------------------
+影音館橫幅 videoBanner
+-------------------------------------
+*/
+a.videoBanner {
+	display: block;
+	width: 336px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+a.videoBanner img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -32px;
+	height: auto;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+a.videoBanner:hover img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+a.videoBanner .cover {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+a.videoBanner:hover .cover {
+	background-color: rgba(255,255,255,0.5);
+}
+a.videoBanner .title {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 188px;
+	background-color: #808080;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	width: 296px;
+}
+a.videoBanner .title span {
+	display: block;
+	height: 3em;
+	line-height: 1.5em;
+	overflow: hidden;
+}
+.slider7_container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 1050px;
+	height: 250px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.slider7_container .loading {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.slider7_container .loading .filter {
+	filter: alpha(opacity=10);
+	opacity:0.1;
+	position: absolute;
+	display: block;
+    background-color: #000;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height:100%;
+}
+.slider7_container .loading .bg {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url(../../img/loading.svg);
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+.slider7_container .slides {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 1050px;
+	height: 250px;
+	overflow: hidden;
+}
+/* jssor slider arrow navigator skin 03 css */
+/*
+.jssora03l                  (normal)
+.jssora03r                  (normal)
+.jssora03l:hover            (normal mouseover)
+.jssora03r:hover            (normal mouseover)
+.jssora03l.jssora03ldn      (mousedown)
+.jssora03r.jssora03rdn      (mousedown)
+*/
+.slider7_container .jssora03l, .slider7_container .jssora03r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 55px;
+	height: 250px;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: rgba(72,72,72,0.3);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 20% auto;
+}
+.slider7_container .jssora03l {
+	top: 0;
+	left: 0;
+	background-image: url(../../img/index/banner_btn_l.png);
+}
+.slider7_container .jssora03r {
+	top: 0;
+	right: 0;
+	background-image: url(../../img/index/banner_btn_r.png);
+}
+.slider7_container .jssora03l:hover, .slider7_container .jssora03r:hover {
+	background-color: rgba(255,255,255,0.50);
+}
+.slider7_container .jssora03l.jssora03ldn, .slider7_container .jssora03r.jssora03rdn {
+	background-color: rgba(255,255,255,0.50);
+}
+
+/*
+-------------------------------------
+新奇影片 趣味影片
+-------------------------------------
+*/
+ul.novelVideo {
+	overflow: hidden;
+	margin-bottom: 40px;
+	height: 316px;
+}
+ul.novelVideo li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin: 0 10px 10px 0;
+}
+ul.novelVideo li a {
+	display: block;
+	width: 175px;
+	height: 153px;
+	overflow: hidden;
+	position: relative;
+}
+ul.novelVideo li:first-child a {
+	width: 360px;
+	height: 316px;
+	background-position: center 101px;
+}
+ul.novelVideo li a img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: -17px;
+	height: auto;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul.novelVideo li:first-child a img {
+	top: -34px;
+}
+ul.novelVideo li a:hover img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+ul.novelVideo li a .cover {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+ul.novelVideo li a:hover .cover {
+	background-color: rgba(255,255,255,0.5);
+}
+ul.novelVideo li a .title {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 97px;
+	background-color: #808080;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	width: 135px;
+	font-size: 12px;
+}
+ul.novelVideo li:first-child a .title {
+	top: 202px;
+	padding: 21px 30px;
+	width: 300px;
+	font-size: 16px;
+}
+ul.novelVideo li a .title span {
+	display: block;
+	height: 3em;
+	line-height: 1.5em;
+	overflow: hidden;
+}
+ul.novelVideo li:first-child a .title span {
+	height: 4.5em;
+	line-height: 1.5em;
+}
+
+/*
+-------------------------------------
+右邊fb粉絲團區塊
+-------------------------------------
+*/
+#fbPageVideoIndex {
+	margin-bottom: 40px;
+}
+/*
+-------------------------------------
+dfp
+-------------------------------------
+*/
+#dfp_video_300_250_aside {
+	width: 300px;
+}

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.slider1_container {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: auto;/*js*/
+    height: 480px;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.slider1_container .slides {
+	cursor: move;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: auto;/*js*/
+	height: 480px;
+	overflow: hidden;
+}
+.jssora13l, .jssora13r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 40px;
+	height: 50px;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-image: url(../../img/index/bannerBtn.png);
+	overflow: hidden;
+	}
+.jssora13l {
+	background-position: -10px -35px;
+	top: 123px;/*js*/
+	left: 30px;/*js*/
+}
+.jssora13r {
+	background-position: -70px -35px;
+	top: 123px;/*js*/
+	right: 30px;/*js*/
+}
+.jssora13l:hover { background-position: -130px -35px; }
+.jssora13r:hover { background-position: -190px -35px; }
+.jssora13l.jssora13ldn { background-position: -250px -35px; }
+.jssora13r.jssora13rdn { background-position: -310px -35px; }
+

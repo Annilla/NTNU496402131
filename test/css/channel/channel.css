@@ -1,0 +1,513 @@
+@charset "UTF-8";
+/* CSS Document */
+/*1024x768 size*/
+
+/*
+-------------------------------------
+mainWrap
+-------------------------------------
+*/
+#dfp_1050_200_top {
+	width: 1050px;
+	margin-bottom: 20px;
+}
+#mainContain {
+	width: 1050px;
+	overflow: hidden;
+}
+#mainContain.channel {/*add class*/
+	margin-bottom: 20px;
+}
+#mainLeft {
+	width: 750px;
+	float: left;
+}
+#mainLeftWrap {
+	width: 750px;
+}
+aside {
+	width: 300px;
+	float: right;
+}
+#asideWrap {
+	width: 300px;
+}
+
+/*
+-------------------------------------
+mainLeft
+-------------------------------------
+*/
+ul#path {
+	width: 730px;
+	overflow: auto;
+	border-bottom: 1px solid #0A58A6;
+}
+ul#path #pathLogo {
+	float: left;
+}
+ul#path li {
+	list-style: none;
+	display: block;
+	float: left;
+	color: #0A58A6;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding-left: 20px;
+	background-image: url(../../img/channel/path_dot.png);
+	background-repeat: no-repeat;
+	background-position: 8px center;
+}
+ul#path li a {}
+ul#path li a:hover {
+	text-decoration: underline;
+}
+
+ul#articleBox {
+	margin: 10px 0;
+}
+ul#articleBox >li {
+	list-style: none;
+	display: block;
+	width: 730px;
+	overflow: auto;
+}
+ul#articleBox >li a.picBox {
+	display: block;
+	width: 220px;
+	height: 220px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+ul#articleBox >li a.picBox .imgBlue {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(10,88,166,0);
+	position: absolute;
+	left: 0;
+	top: 0;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#articleBox >li:hover a.picBox .imgBlue {
+	background-color: rgba(255,255,255,0.5);
+}
+ul#articleBox >li a.picBox .tag {
+	width: 55px;
+	height: 54px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-image: url(../../img/channel/tag.png);
+	background-repeat: no-repeat;
+	background-position: right top;
+	color: #FFFFFF;
+	text-align: right;
+	padding: 5px 5px 0 0;
+}
+ul#articleBox >li a.picBox img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#articleBox >li:hover a.picBox img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+ul#articleBox >li .articleMain {
+	width: 490px;
+	line-height: 30px;
+	float: left;
+	margin-left: 20px;
+	border-bottom: 1px solid #808080;
+}
+ul#articleBox >li .articleMain a.title {
+	font-size: 20px;
+	letter-spacing: 1px;
+	height: 60px;
+	overflow: hidden;
+	display: block;
+	margin-top: 20px;
+}
+ul#articleBox >li:hover .articleMain a.title {
+	color: #0A58A6;
+}
+ul#articleBox >li .articleMain .content {
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 25px;
+	height: 75px;
+	overflow: hidden;
+	margin: 10px 0 20px 0;
+}
+ul#articleBox >li .articleMain .socialBox {
+	overflow: auto;
+	padding-bottom: 10px;
+}
+ul#articleBox >li .articleMain .socialBox ul.socialPlug {
+	height: 30px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+}
+ul#articleBox >li .articleMain .socialBox ul.socialPlug li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin-right: 2px;
+}
+ul#articleBox >li .articleMain ul.channel_all {
+	overflow: auto;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-top: 10px;
+	color: #808080;
+}
+ul#articleBox >li .articleMain ul.channel_all >li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+ul#articleBox >li .articleMain ul.channel_all >li:first-child {
+	line-height: 1.5em;
+	padding: 0 10px;
+	border: 1px solid #CCCCCC;
+}
+ul#articleBox >li .articleMain ul.channel_all li a {
+	display: block;
+	line-height: 1.5em;
+	padding: 0 10px;
+	border: 1px solid #CCCCCC;
+}
+ul#articleBox >li .articleMain ul.channel_all li a:hover {
+	color: #FFFFFF;
+	background-color: #0A58A6;
+}
+ul#articleBox >li .articleMain ul.channel_all span {
+	display: block;
+	float: right;
+	line-height: 20px;
+}
+#dfp_728_90_middle {
+	margin-bottom: 20px;
+}
+#pageNav {
+	width: 730px;
+	clear: both;
+	color: #0A58A6;
+	border: 1px solid #0A58A6;
+	padding: 10px 0;
+}
+#pageNav #pageNavWrap{
+	width: auto;/*用js算寬度*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+#pageNav #pageNavWrap >a {
+	display: block;
+	padding: 0px 10px;
+	float: left;
+}
+#pageNav #pageNavWrap li.selected a {
+	text-decoration: underline;
+}
+#pageNav #pageNavWrap a:hover {
+	text-decoration: underline;
+}
+#pageNav #pageNavWrap ul {
+	overflow: auto;
+	display: block;
+	float: left;
+}
+#pageNav #pageNavWrap ul li {
+	list-style: none;
+	display: block;
+	float: left;
+}
+#pageNav #pageNavWrap ul li a {
+	padding: 0px 10px;
+}
+/*notFound搜尋不到文章*/
+#mainLeft.notFoundPage {
+	width: 1050px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#mainLeft.notFoundPage #mainLeftWrap {
+	width: 1050px;
+}
+#mainLeft.notFoundPage #mainLeftWrap ul#path {
+	width: 1050px;
+}
+.notFound {
+	text-align: center;
+	padding: 50px 0px;
+	color: #cccccc;
+	background-color: #EFEFEF;
+}
+.notFound .en {
+	font-size: 60px;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 0px;
+	line-height: 1.5em;
+}
+.notFound .ch {
+	font-size: 21px;
+	margin-top: 5px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	line-height: 2em;
+}
+.notFound .ch a {
+	color: #0a58a6;
+	text-decoration: underline;
+}
+.notFound.article {
+	width: 730px;
+	margin-top: 10px;
+}
+.notFound.page {
+	margin-top: 10px;
+	height: 40vh;
+	padding: 20vh 0 0 0;
+}
+/*
+-------------------------------------
+aside
+-------------------------------------
+*/
+#dfp_300_150_aside_top {
+	width: 300px;
+}
+#dfp_300_250_aside_top_1 {
+	width: 300px;
+}
+#dfp_300_250_aside_top_2 {
+	width: 300px;
+}
+#dfp_300_aside_bottom {
+	margin: 0;
+	padding: 0;
+}/*js控制插入*/
+
+/*
+-------------------------------------
+aside news
+-------------------------------------
+*/
+ul#newsTab {
+	overflow: auto;
+}
+ul#newsTab li {
+	list-style: none;
+	float: left;
+	width: 100px;
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	color: #808080;
+	background-color: #EFEFEF;
+	cursor: pointer;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#newsTab li:hover {
+	color: #FFF;
+	background-color: #CCCCCC;
+}
+ul#newsTab li.choose {
+	color: #FFF;
+	background-color: #CCCCCC;
+}
+
+ul#newsCon {}
+ul#newsCon li {
+	list-style: none;
+}
+ul#newsCon li a {
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 2em;
+	background-color: #FFF;
+	border-bottom: 1px solid #d2dcec;
+}
+ul#newsCon li a:hover {
+	color: #FFF;
+	background-color: #808080;
+}
+ul#newsCon li a .newsImg {
+	width: 300px;
+	height: 176px;
+	overflow: hidden;
+	position: relative;
+}
+ul#newsCon li a .newsImg:after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(255,255,255,0);
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#newsCon li a:hover .newsImg:after {
+	background-color: rgba(255,255,255,0.5);
+}
+ul#newsCon li a .newsImg img {
+	width: 100%;
+	height: 100%;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#newsCon li a:hover .newsImg img {
+	-webkit-transform: scale(1.2);
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform: scale(1.2);
+	-moz-transform-origin: 50% 50%;
+	-o-transform: scale(1.2);
+	-o-transform-origin: 50% 50%;
+	-ms-transform: scale(1.2);
+	-ms-transform-origin: 50% 50%;
+	transform: scale(1.2);
+	transform-origin: 50% 50%;
+}
+ul#newsCon li a .newsTitle {
+	overflow: auto;
+	padding: 5px 0;
+}
+ul#newsCon li a .newsTitle .newsNum {
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+	border-radius: 12px;
+	background-color: #CCCCCC;
+	float: left;
+	margin: 5px 10px;
+}
+ul#newsCon li a:hover .newsTitle .newsNum {
+	color: #808080;
+	background-color: #FFF;
+}
+ul#newsCon li a .newsTitle span {
+	display: block;
+	height: 2em;
+	overflow: hidden;
+	margin-top: 5px;
+}
+
+/*
+-------------------------------------
+recommend
+-------------------------------------
+*/
+ul#recommend {}
+ul#recommend li {
+	list-style: none;
+	display: block;
+	margin-bottom: 5px;
+}
+ul#recommend li a {
+	width: 300px;
+	height: 176px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+ul#recommend li a .tag {
+	font-size: 18px;
+	padding: 5px 10px;
+	color: #FFFFFF;
+	background-color: #0A58A6;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+ul#recommend li a .title {
+	width: 280px;
+	height: 48px;
+	overflow: hidden;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 2em;
+	padding: 10px;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0.55);
+	position: absolute;
+	left: 0;
+	bottom: -29px;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+ul#recommend li a .title span {
+	display: block;
+	overflow: hidden;
+	height: 48px;
+}
+ul#recommend li a:hover .title {
+	padding: 10px;
+	color: #FFFFFF;
+	background-color: rgba(10,88,166,0.8);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+ul#recommend li a img {
+	width: 100%;
+	height: 100%;
+}
+
+/*
+-------------------------------------
+searchTag 搜尋頁標籤
+-------------------------------------
+*/
+ul.searchTag {
+	width: 730px;
+	overflow: auto;
+	margin: 15px 0 10px 0;
+}
+ul.searchTag li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin: 0 5px 5px 0;
+}
+ul.searchTag li a {
+	display: block;
+	font-size: 15px;
+	padding: 10px 15px;
+	background-color: #C0C0C0;
+	color: #FFFFFF;
+}
+ul.searchTag li a.selected {
+	background-color: #0A58A6;	
+}
+ul.searchTag li a:hover {
+	background-color: #0A58A6;	
+}

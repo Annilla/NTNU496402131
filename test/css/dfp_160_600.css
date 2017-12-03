@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+-------------------------------------
+左右直立廣告
+-------------------------------------
+*/
+#dfp_160_600_L {
+	width: 160px;
+	position: absolute; /*js控制*/
+	z-index: 1;
+}
+#dfp_160_600_R {
+	width: 160px;
+	position: absolute; /*js控制*/
+	z-index: 1;
+}
+
